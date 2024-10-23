@@ -11,6 +11,31 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            height: 100vh; /* Full height of the viewport */
+            background-color: #f9f9f9; /* Background color */
+            margin: 100px;
+        }
+        .container {
+            display: flex; /* Create a flex container */
+            width: 100%; /* Full width */
+            max-width: 1000px; /* Limit max width for the container */
+        }
+        .chatbot-image {
+            width: 30%; /* Set a smaller width for the image */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: 20px; /* Space between the image and chatbot */
+        }
+        #pickaxe-inline-Playful_Love_Guru_IPZY4 {
+            width: 80%; /* Full width */
+            height: 80vh; /* 80% of viewport height */
+            max-width: 600px; /* Maximum width of the chatbot */
+            border: 1px solid #ccc; /* Optional border for styling */
+            border-radius: 8px; /* Rounded corners */
+            overflow: hidden; /* Hide overflow */
+            
         }
         .textbox-wrapper {
             position: relative;
@@ -29,24 +54,12 @@
     </style>
 </head>
 <body>
+    
+        <img src="rb_81425.png" alt="Chatbot Image" class="chatbot-image"> <!-- Add your image URL here -->
 
-    <!-- Embedding the Pickaxe chatbot -->
-    <div class="chatbox-wrapper">
-        <script>
-            window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIAxiDA6wgM6CMbgC4UgDDAXYEAvDIBoGEBgG4CAWQIGYBgwCqApdoEjggjIaCcCoCA9gVAaAnBYBkqgBkKBwWoARYgJhrAFwqAFQEAHkIAXAQAASgbCfAhqSAAAsDEAYEc+QJckgGXFAhUGBQ30CssIGW7QC6VgSoRAA0uBF3ECNOIFgaQCZUgVkpAyCIAwQEESgIXxAElyAFEQDsgIpqgBcQgLBBgEI0gAxYgAgiAEqAAAiAQPqAAHqASPCAIRyAJBGAKgmALmmAACGAMm6ANgmAPzuAsCWAS1CAFkGAfEKAdhCALSmAAIOAbmqAPXOAe0GACX+AOhiAgkmAi4eAj2GAlCOAcRmAmzmAfXmAo02AVFWAiauAY1+AFWeAmbmARXeAL6GATCqADaSADEiAUBSAz90A4oAyioBY4oCIXC6AQAuAiBeAYRiACAyAUISAgWCABR6AXiiAULGAAHDAIAUgAqQwAUk4B8VEA4gSABCEAHqAACDACTMgDOJQCDQoAhxcACQ2AWihAAEogApAQAaR4AAMUAcSCAELpAAAGgAUKQBnDYBHIEABESAI2BAA0cgCkKwBMbIBcVkAZmWATcbAHk5gAJ9QAyKoAMhAANIAVlEA2BiAMWBAEwpgCcBQDia4AR6kA5/WAVWPAElEgE3EwCBoIADQ0ADBSAbgXAAfLgGi1QBE3YAJM8AYKIAIEAB8iAABRAIFGgAF9wABwIACIEASKCALhfAIEGgBQhwABoIBhIcAyuCAZ8DAFiggBTZwCCoIANX0AUXyAPltAIQZgAGEwD+LIAHBUAjIyAdWtAKUzgCgswDnwYB3h0AxiKAHr5AFCjgCiRwDhQoBfb0AGeGAYVhAFXkgGQGQBBkoB6UsAekWAK7XABpQgGlbQD06ABCQBCIIBEQ0AfjeAPI5ADrygEyIQBsL4Bw30AdBmAATvAFGvgCwhwAuJ4BEIMAAAmALGtAJGsgBEVwCj4IBEkAAuIAoyCABW+gAapIA4kSAOCssKALwYgCJ0oAQX8ACCAN/DgD2QoAkEWADiVgAk6YAjLOAO43gBDPIAAIoAABAA===" };
-            window.PICKAXE.pickaxes.push({ id: "Playful_Love_Guru_IPZY4", type: "inline" });
-            const { id: _fid } = window.PICKAXE.pickaxes[0];
-            fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
-                .then((e) => e.json())
-                .then(({ v: e }) => {
-                    const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
-                    if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
-                        const e = document.createElement("script");
-                        e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
-                    }
-                });
-        </script>
-        <div id="pickaxe-inline-Playful_Love_Guru_IPZY4"></div>
-    </div>
+        <!-- Embedding the Pickaxe chatbot -->
+
+    <iframe id="embed-preview-iframe" loading="eager" src="https://embed.pickaxeproject.com/axe?id=Playful_Love_Guru_IPZY4&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Caveat&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=FFB8DE&c_ff=FFFFFF&c_fbd=FFB8DE&c_rb=FFFFFF&c_bb=FF5757&c_bt=000000&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=box&s_b=outline&s_t=0&s_to=1&s_r=2&image=hide&title=hide&description=hide" width="80%" height="800px" class="transition hover:translate-y-[-2px] hover:shadow-[0_6px_20px_0px_rgba(0,0,0,0.15)]" style="border:1px solid rgba(0, 0, 0, 1);transition:.3s;border-radius:0px;max-width:3000px" frameBorder="0"></iframe>
+<div id="pickaxe-fab-Playful_Love_Guru_IPZY4"></div>
 </body>
 </html>
