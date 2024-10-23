@@ -6,60 +6,58 @@
     <link rel="stylesheet" href="Styles/style.css">
     <title>Chatbot Integration</title>
     <style>
-        /* Add any additional styles needed for your layout */
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
             padding: 0;
             display: flex; /* Use flexbox for layout */
             justify-content: center; /* Center the content horizontally */
             align-items: center; /* Center the content vertically */
             height: 100vh; /* Full height of the viewport */
             background-color: #f9f9f9; /* Background color */
-            margin: 100px;
+            margin: 50px;
+            flex-direction: column; /* Stack elements vertically */
         }
-        .container {
-            display: flex; /* Create a flex container */
-            width: 100%; /* Full width */
-            max-width: 1000px; /* Limit max width for the container */
+        #Title {
+            margin-bottom: 20px; /* Space below the title */
+            font-size: 2em; /* Adjust font size as needed */
+            text-align: center; /* Center the title text */
+        }
+        #frame {
+            display: flex; /* Use flexbox for layout */
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent line breaks */
+            width: 80%; /* Set width of the frame */
+            border: 1px solid #ccc; /* Optional border for styling */
+            border-radius: 8px; /* Rounded corners */
         }
         .chatbot-image {
             width: 30%; /* Set a smaller width for the image */
             height: auto; /* Maintain aspect ratio */
             margin-right: 20px; /* Space between the image and chatbot */
         }
-        #pickaxe-inline-Playful_Love_Guru_IPZY4 {
+        #embed-preview-iframe {
             width: 80%; /* Full width */
-            height: 80vh; /* 80% of viewport height */
-            max-width: 600px; /* Maximum width of the chatbot */
+            height: 800px; /* Height of the iframe */
             border: 1px solid #ccc; /* Optional border for styling */
             border-radius: 8px; /* Rounded corners */
             overflow: hidden; /* Hide overflow */
-            
-        }
-        .textbox-wrapper {
-            position: relative;
-            padding: 20px;
-        }
-        .message-input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        .submit-button {
-            margin-top: 10px;
         }
     </style>
 </head>
 <body>
-    
+    <h1 id="Title">RommanceAi</h1> <!-- Title appears above the frame -->
+    <div id="frame">
         <img src="rb_81425.png" alt="Chatbot Image" class="chatbot-image"> <!-- Add your image URL here -->
 
         <!-- Embedding the Pickaxe chatbot -->
-
-    <iframe id="embed-preview-iframe" loading="eager" src="https://embed.pickaxeproject.com/axe?id=Playful_Love_Guru_IPZY4&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Caveat&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=FFB8DE&c_ff=FFFFFF&c_fbd=FFB8DE&c_rb=FFFFFF&c_bb=FF5757&c_bt=000000&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=box&s_b=outline&s_t=0&s_to=1&s_r=2&image=hide&title=hide&description=hide" width="80%" height="800px" class="transition hover:translate-y-[-2px] hover:shadow-[0_6px_20px_0px_rgba(0,0,0,0.15)]" style="border:1px solid rgba(0, 0, 0, 1);transition:.3s;border-radius:0px;max-width:3000px" frameBorder="0"></iframe>
-<div id="pickaxe-fab-Playful_Love_Guru_IPZY4"></div>
+        <iframe 
+            id="embed-preview-iframe" 
+            loading="eager" 
+            src="https://embed.pickaxeproject.com/axe?id=Playful_Love_Guru_IPZY4&mode=embed_gold&host=beta&theme=custom&opacity=100&font_header=Caveat&size_header=30&font_body=Real+Head+Pro&size_body=16&font_labels=Real+Head+Pro&size_labels=14&font_button=Real+Head+Pro&size_button=16&c_fb=FFB8DE&c_ff=FFFFFF&c_fbd=FFB8DE&c_rb=FFFFFF&c_bb=FF5757&c_bt=000000&c_t=000000&s_ffo=100&s_rbo=100&s_bbo=100&s_f=box&s_b=outline&s_t=0&s_to=1&s_r=2&image=hide&title=hide&description=hide" 
+            frameBorder="0">
+        </iframe>
+    </div>
+    
+    <div id="pickaxe-fab-Playful_Love_Guru_IPZY4"></div>
 </body>
 </html>
