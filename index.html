@@ -3,50 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/style.css">
-    <title>Chatbot Integration</title>
+    <title>Unlock the Secrets of Love</title>
     <style>
-        /* Add any additional styles needed for your layout */
         body {
-            font-family: Arial, sans-serif;
+            background: #D07A8A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
             margin: 0;
-            padding: 0;
-        }
-        .textbox-wrapper {
             position: relative;
-            padding: 20px;
         }
-        .message-input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .content {
+            color: #FFF;
+            text-align: center;
+            font-family: 'Afacad', sans-serif;
+            font-size: 90px; /* Smaller font size */
+            font-weight: 600;
+            line-height: 1.2;
+            margin-top: -100px;
+            position: relative;
         }
-        .submit-button {
-            margin-top: 10px;
+        .content .love {
+            font-family: 'Brownist', sans-serif;
+            font-weight: 400;
+            display: block; /* Ensures "Love" is on a new line */
+            font-size: 100px; /* Slightly larger font for emphasis */
+        }
+        /* Styling for the new text box */
+        .click-to-begin {
+            width: 535px;
+            color: #FFF;
+            text-align: center;
+            font-family: 'Brownist', sans-serif;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 189px; /* Space between the first text box and this one */
+            cursor: pointer; /* Change cursor to pointer */
+        }
+        /* Styling for the positioned asset */
+        .asset {
+            position: absolute;
+            top: 100px; 
+            right: 50px; 
+            left: 850px; 
+            margin-top: 166.47px; 
+            width: 286px;
+            height: 282px;
+            background-image: url('assets/chatheart.png');
+            background-size: cover; 
+            background-position: center; 
+            flex-shrink: 0;
         }
     </style>
 </head>
 <body>
-
-    <!-- Embedding the Pickaxe chatbot -->
-    <div class="chatbox-wrapper">
-        <script>
-            window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIAxiDA6wgM6CMbgC4UgDDAXYEAvDIBoGEBgG4CAWQIGYBgwCqApdoEjggjIaCcCoCA9gVAaAnBYBkqgBkKBwWoARYgJhrAFwqAFQEAHkIAXAQAASgbCfAhqSAAAsDEAYEc+QJckgGXFAhUGBQ30CssIGW7QC6VgSoRAA0uBF3ECNOIFgaQCZUgVkpAyCIAwQEESgIXxAElyAFEQDsgIpqgBcQgLBBgEI0gAxYgAgiAEqAAAiAQPqAAHqASPCAIRyAJBGAKgmALmmAACGAMm6ANgmAPzuAsCWAS1CAFkGAfEKAdhCALSmAAIOAbmqAPXOAe0GACX+AOhiAgkmAi4eAj2GAlCOAcRmAmzmAfXmAo02AVFWAiauAY1+AFWeAmbmARXeAL6GATCqADaSADEiAUBSAz90A4oAyioBY4oCIXC6AQAuAiBeAYRiACAyAUISAgWCABR6AXiiAULGAAHDAIAUgAqQwAUk4B8VEA4gSABCEAHqAACDACTMgDOJQCDQoAhxcACQ2AWihAAEogApAQAaR4AAMUAcSCAELpAAAGgAUKQBnDYBHIEABESAI2BAA0cgCkKwBMbIBcVkAZmWATcbAHk5gAJ9QAyKoAMhAANIAVlEA2BiAMWBAEwpgCcBQDia4AR6kA5/WAVWPAElEgE3EwCBoIADQ0ADBSAbgXAAfLgGi1QBE3YAJM8AYKIAIEAB8iAABRAIFGgAF9wABwIACIEASKCALhfAIEGgBQhwABoIBhIcAyuCAZ8DAFiggBTZwCCoIANX0AUXyAPltAIQZgAGEwD+LIAHBUAjIyAdWtAKUzgCgswDnwYB3h0AxiKAHr5AFCjgCiRwDhQoBfb0AGeGAYVhAFXkgGQGQBBkoB6UsAekWAK7XABpQgGlbQD06ABCQBCIIBEQ0AfjeAPI5ADrygEyIQBsL4Bw30AdBmAATvAFGvgCwhwAuJ4BEIMAAAmALGtAJGsgBEVwCj4IBEkAAuIAoyCABW+gAapIA4kSAOCssKALwYgCJ0oAQX8ACCAN/DgD2QoAkEWADiVgAk6YAjLOAO43gBDPIAAIoAABAA===" };
-            window.PICKAXE.pickaxes.push({ id: "Playful_Love_Guru_IPZY4", type: "inline" });
-            const { id: _fid } = window.PICKAXE.pickaxes[0];
-            fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
-                .then((e) => e.json())
-                .then(({ v: e }) => {
-                    const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
-                    if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
-                        const e = document.createElement("script");
-                        e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
-                    }
-                });
-        </script>
-        <div id="pickaxe-inline-Playful_Love_Guru_IPZY4"></div>
+    <div class="content">
+        Unlock the Secrets of <span class="love">Love</span>
     </div>
+    <div class="click-to-begin">
+        Click to begin
+    </div>
+    <script>
+        // Select the clickable element
+        const clickToBegin = document.querySelector('.click-to-begin');
+
+        // Add click event listener
+        clickToBegin.addEventListener('click', function() {
+            // Redirect to the target page
+            window.location.href = 'chatbot.html'; // Change to your target page
+        });
+    </script>
+
+     <!-- Asset with specified position and dimensions -->
+     <div class="asset"></div>
+    
 </body>
 </html>

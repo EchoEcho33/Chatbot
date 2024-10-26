@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Unlock the Secrets of Love</title>
+    <style>
+        body {
+            background: #D07A8A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 140vh;
+            margin: 0;
+            position: relative;
+        }
+        .content {
+            color: #FFF;
+            text-align: center;
+            font-family: 'Afacad', sans-serif;
+            font-size: 90px; /* Smaller font size */
+            font-weight: 600;
+            line-height: 1.2;
+            margin-top: -250px;
+            position: relative;
+        }
+        .content .love {
+            font-family: 'Brownist', sans-serif;
+            font-weight: 400;
+            display: block; /* Ensures "Love" is on a new line */
+            font-size: 100px; /* Slightly larger font for emphasis */
+        }
+        /* Styling for the positioned asset */
+        .asset {
+            position: absolute;
+            top: 160px; 
+            right: 50px; 
+            left: 950px; 
+            margin-top: 10px; 
+            width: 286px;
+            height: 282px;
+            background-image: url('assets/chatheart.png');
+            background-size: cover; 
+            background-position: center; 
+            flex-shrink: 0;
+        }
+        /* New step textbox */
+        .step-textbox {
+            height: 129px; /* Set height */
+            width: 250px; /* Adjust width as needed */
+            color: #FFF; /* Text color */
+            text-align: center; /* Center text */
+            font-family: 'Brownist', sans-serif; /* Font family */
+            font-size: 36px; /* Font size */
+            font-style: normal; /* Font style */
+            font-weight: 400; /* Font weight */
+            line-height: normal; /* Line height */
+            margin-right: 970px; /* Space to the right of the textbox */
+        }
+        /* New step 2 textbox */
+        .step-2 {
+            width: 366px; /* Set width */
+            height: 129px; /* Set height */
+            position: absolute; /* Absolute positioning */
+            left: 140px; /* Position from the left */
+            top: 500px; /* Position from the top */
+            color: #FFF; /* Text color */
+            text-align: center; /* Center text */
+            font-family: 'Brownist', sans-serif; /* Font family */
+            font-size: px; /* Font size */
+            font-style: normal; /* Font style */
+            font-weight: 400; /* Font weight */
+            line-height: normal; /* Line height */
+        }
+        .step-3 {
+            width: 366px; /* Set width */
+            height: 129px; /* Set height */
+            position: absolute; /* Absolute positioning */
+            left: 60px; /* Position from the left */
+            top: 700px; /* Position from the top */
+        }
+        .step-4 {
+            width: 366px; /* Set width */
+            height: 129px; /* Set height */
+            position: absolute; /* Absolute positioning */
+            left: 850px; /* Position from the left */
+            top: 500px; /* Position from the top */
+        }
+        .step-5 {
+            width: 366px; /* Set width */
+            height: 129px; /* Set height */
+            position: absolute; /* Absolute positioning */
+            left: 1000px; /* Position from the left */
+            top: 700px; /* Position from the top */
+        }
+        /* Add any additional styles needed for your layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .textbox-wrapper {
+            position: relative;
+            padding: 20px;
+        }
+        .message-input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-button {
+            margin-top: 10px;
+        }
+        .chatbox-wrapper {
+            margin-top: -40px; /* Adjust this value to move it up or down */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="content">
+        Unlock the Secrets of <span class="love">Love</span>
+    </div>
+    <!-- Asset with specified position and dimensions -->
+    <div class="asset"></div>
+    <div class="step-textbox">
+        Step 1: <br> gain some confidence
+    </div>
+    <div class="step-textbox step-2">
+        Step 2: <br> Sort out your feelings
+    </div>
+    <div class="step-textbox step-3">
+        Step 3: <br> debrief the events
+    </div>
+    <div class="step-textbox step-4">
+        Step 4: <br> Ask us how!
+    </div>
+    <div class="step-textbox step-5">
+        Step 5: <br> Confess!
+    </div>
+
+    <!-- Embedding the Pickaxe chatbot -->
+    <div class="chatbox-wrapper">
+        <script>
+            window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIAxiDA6wgM6CMbgC4UgDDAXYEAvDIBoGEBgG4CAWQIGYBgwCqApdoEjggjIaCcCoCA9gVAaAnBYBkqgBkKBwWoARYgJhrAFwqAFQEAHkIAXAQAASgbCfAhqSAAAsDEAYEc+QJckgGXFAhUGBQ30CssIGW7QC6VgSoRAA0uBF3ECNOIFgaQCZUgVkpAyCIAwQEESgIXxAElyAFEQDsgIpqgBcQgLBBgEI0gAxYgAgiAEqAAAiAQPqAAHqASPCAIRyAJBGAKgmALmmAACGAMm6ANgmAPzuAsCWAS1CAFkGAfEKAdhCALSmAAIOAbmqAPXOAe0GACX+AOhiAgkmAi4eAj2GAlCOAcRmAmzmAfXmAo02AVFWAiauAY1+AFWeAmbmARXeAL6GATCqADaSADEiAUBSAz90A4oAyioBY4oCIXC6AQAuAiBeAYRiACAyAUISAgWCABR6AXiiAULGAAHDAIAUgAqQwAUk4B8VEA4gSABCEAHqAACDACTMgDOJQCDQoAhxcACQ2AWihAAEogApAQAaR4AAMUAcSCAELpAAAGgAUKQBnDYBHIEABESAI2BAA0cgCkKwBMbIBcVkAZmWATcbAHk5gAJ9QAyKoAMhAANIAVlEA2BiAMWBAEwpgCcBQDia4AR6kA5/WAVWPAElEgE3EwCBoIADQ0ADBSAbgXAAfLgGi1QBE3YAJM8AYKIAIEAB8iAABRAIFGgAF9wABwIACIEASKCALhfAIEGgBQhwABoIBhIcAyuCAZ8DAFiggBTZwCCoIANX0AUXyAPltAIQZgAGEwD+LIAHBUAjIyAdWtAKUzgCgswDnwYB3h0AxiKAHr5AFCjgCiRwDhQoBfb0AGeGAYVhAFXkgGQGQBBkoB6UsAekWAK7XABpQgGlbQD06ABCQBCIIBEQ0AfjeAPI5ADrygEyIQBsL4Bw30AdBmAATvAFGvgCwhwAuJ4BEIMAAAmALGtAJGsgBEVwCj4IBEkAAuIAoyCABW+gAapIA4kSAOCssKALwYgCJ0oAQX8ACCAN/DgD2QoAkEWADiVgAk6YAjLOAO43gBDPIAAIoAABAA===" };
+            window.PICKAXE.pickaxes.push({ id: "Playful_Love_Guru_IPZY4", type: "inline" });
+            const { id: _fid } = window.PICKAXE.pickaxes[0];
+            fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
+                .then((e) => e.json())
+                .then(({ v: e }) => {
+                    const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
+                    if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
+                        const e = document.createElement("script");
+                        e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
+                    }
+                });
+        </script>
+        
+        <div id="pickaxe-inline-Playful_Love_Guru_IPZY4"></div>
+    </div>
+</body>
+</html>
