@@ -23,7 +23,6 @@
             font-size: 90px; /* Smaller font size */
             font-weight: 600;
             line-height: 1.2;
-            margin-top: -250px;
             position: relative;
         }
         .content .love {
@@ -122,7 +121,7 @@
     </style>
 </head>
 <body>
-    
+    <div class="heart-wrapper">
     <div class="content">
         Unlock the Secrets of <span class="love">Love</span>
     </div>
@@ -145,23 +144,29 @@
     </div>
 
     <!-- Embedding the Pickaxe chatbot -->
-    <div class="chatbox-wrapper">
-        <script>
-            window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIAxiDA6wgM6CMbgC4UgDDAXYEAvDIBoGEBgG4CAWQIGYBgwCqApdoEjggjIaCcCoCA9gVAaAnBYBkqgBkKBwWoARYgJhrAFwqAFQEAHkIAXAQAASgbCfAhqSAAAsDEAYEc+QJckgGXFAhUGBQ30CssIGW7QC6VgSoRAA0uBF3ECNOIFgaQCZUgVkpAyCIAwQEESgIXxAElyAFEQDsgIpqgBcQgLBBgEI0gAxYgAgiAEqAAAiAQPqAAHqASPCAIRyAJBGAKgmALmmAACGAMm6ANgmAPzuAsCWAS1CAFkGAfEKAdhCALSmAAIOAbmqAPXOAe0GACX+AOhiAgkmAi4eAj2GAlCOAcRmAmzmAfXmAo02AVFWAiauAY1+AFWeAmbmARXeAL6GATCqADaSADEiAUBSAz90A4oAyioBY4oCIXC6AQAuAiBeAYRiACAyAUISAgWCABR6AXiiAULGAAHDAIAUgAqQwAUk4B8VEA4gSABCEAHqAACDACTMgDOJQCDQoAhxcACQ2AWihAAEogApAQAaR4AAMUAcSCAELpAAAGgAUKQBnDYBHIEABESAI2BAA0cgCkKwBMbIBcVkAZmWATcbAHk5gAJ9QAyKoAMhAANIAVlEA2BiAMWBAEwpgCcBQDia4AR6kA5/WAVWPAElEgE3EwCBoIADQ0ADBSAbgXAAfLgGi1QBE3YAJM8AYKIAIEAB8iAABRAIFGgAF9wABwIACIEASKCALhfAIEGgBQhwABoIBhIcAyuCAZ8DAFiggBTZwCCoIANX0AUXyAPltAIQZgAGEwD+LIAHBUAjIyAdWtAKUzgCgswDnwYB3h0AxiKAHr5AFCjgCiRwDhQoBfb0AGeGAYVhAFXkgGQGQBBkoB6UsAekWAK7XABpQgGlbQD06ABCQBCIIBEQ0AfjeAPI5ADrygEyIQBsL4Bw30AdBmAATvAFGvgCwhwAuJ4BEIMAAAmALGtAJGsgBEVwCj4IBEkAAuIAoyCABW+gAapIA4kSAOCssKALwYgCJ0oAQX8ACCAN/DgD2QoAkEWADiVgAk6YAjLOAO43gBDPIAAIoAABAA===" };
-            window.PICKAXE.pickaxes.push({ id: "Playful_Love_Guru_IPZY4", type: "inline" });
-            const { id: _fid } = window.PICKAXE.pickaxes[0];
-            fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
-                .then((e) => e.json())
-                .then(({ v: e }) => {
-                    const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
-                    if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
-                        const e = document.createElement("script");
-                        e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
-                    }
-                });
-        </script>
-        
-        <div id="pickaxe-inline-Playful_Love_Guru_IPZY4"></div>
+        <div class="chatbox-wrapper">
+            <script>
+                window.PICKAXE = window.PICKAXE || { pickaxes: [], style: "kHsjoCQGgI0GWASmgIdIAxiDA6wgM6CMbgC4UgDDAXYEAvDIBoGEBgG4CAWQIGYBgwCqApdoEjggjIaCcCoCA9gVAaAnBYBkqgBkKBwWoARYgJhrAFwqAFQEAHkIAXAQAASgbCfAhqSAAAsDEAYEc+QJckgGXFAhUGBQ30CssIGW7QC6VgSoRAA0uBF3ECNOIFgaQCZUgVkpAyCIAwQEESgIXxAElyAFEQDsgIpqgBcQgLBBgEI0gAxYgAgiAEqAAAiAQPqAAHqASPCAIRyAJBGAKgmALmmAACGAMm6ANgmAPzuAsCWAS1CAFkGAfEKAdhCALSmAAIOAbmqAPXOAe0GACX+AOhiAgkmAi4eAj2GAlCOAcRmAmzmAfXmAo02AVFWAiauAY1+AFWeAmbmARXeAL6GATCqADaSADEiAUBSAz90A4oAyioBY4oCIXC6AQAuAiBeAYRiACAyAUISAgWCABR6AXiiAULGAAHDAIAUgAqQwAUk4B8VEA4gSABCEAHqAACDACTMgDOJQCDQoAhxcACQ2AWihAAEogApAQAaR4AAMUAcSCAELpAAAGgAUKQBnDYBHIEABESAI2BAA0cgCkKwBMbIBcVkAZmWATcbAHk5gAJ9QAyKoAMhAANIAVlEA2BiAMWBAEwpgCcBQDia4AR6kA5/WAVWPAElEgE3EwCBoIADQ0ADBSAbgXAAfLgGi1QBE3YAJM8AYKIAIEAB8iAABRAIFGgAF9wABwIACIEASKCALhfAIEGgBQhwABoIBhIcAyuCAZ8DAFiggBTZwCCoIANX0AUXyAPltAIQZgAGEwD+LIAHBUAjIyAdWtAKUzgCgswDnwYB3h0AxiKAHr5AFCjgCiRwDhQoBfb0AGeGAYVhAFXkgGQGQBBkoB6UsAekWAK7XABpQgGlbQD06ABCQBCIIBEQ0AfjeAPI5ADrygEyIQBsL4Bw30AdBmAATvAFGvgCwhwAuJ4BEIMAAAmALGtAJGsgBEVwCj4IBEkAAuIAoyCABW+gAapIA4kSAOCssKALwYgCJ0oAQX8ACCAN/DgD2QoAkEWADiVgAk6YAjLOAO43gBDPIAAIoAABAA===" };
+                window.PICKAXE.pickaxes.push({ id: "Playful_Love_Guru_IPZY4", type: "inline" });
+                const { id: _fid } = window.PICKAXE.pickaxes[0];
+                fetch(`https://embed.pickaxeproject.com/axe/api/script/${_fid}`)
+                    .then((e) => e.json())
+                    .then(({ v: e }) => {
+                        const t = `https://cdn.jsdelivr.net/gh/pickaxeproject/cdn@${e}/dist`;
+                        if (!document.querySelector(`script[src="${t}/bundle.js"]`)) {
+                            const e = document.createElement("script");
+                            e.src = t + "/bundle.js", e.defer = !0, document.head.appendChild(e);
+                        }
+                    });
+            </script>
+            
+            <div id="pickaxe-inline-Playful_Love_Guru_IPZY4"></div>
+        </div>
+        <div class="heart x1"></div>
+        <div class="heart x2"></div>
+        <div class="heart x3"></div>
+        <div class="heart x4"></div>
+        <div class="heart x5"></div>
     </div>
 </body>
 </html>
